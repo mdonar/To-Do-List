@@ -1,0 +1,160 @@
+/*Fonts Add
+font-family: 'Lato',
+sans-serif;
+font-family: 'Heebo',
+sans-serif;
+font-family: 'Roboto Condensed',
+sans-serif;
+/*
+
+/*Start Page*/
+
+.startBody {
+	background-image: url(../images/mtSecond.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	font-family: 'Heebo',
+		sans-serif;
+}
+
+.startTitle {
+	padding-top: 20%;
+}
+
+.startTitle h1 {
+	color: #FFF2F2;
+	text-align: center;
+	font-size: 4em;
+	display: inline;
+}
+
+.startTitle h2 {
+	font-size: 3.5em;
+	color: #FFF2F2;
+	padding-top: 4%;
+	text-align: center;
+}
+
+.startLogoDiv {
+	display: inline;
+	padding-left: 32%;
+}
+
+.startLink {
+	font-size: 2.5em;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF2F2;
+}
+
+a:hover {
+	font-size: 3em;
+	color: darkgray;
+}
+
+
+/*Main ToDo List CSS*/
+
+.main {
+	background-color: #2C2F33;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+.mainHeader {
+	background-color: #030C5B;
+	padding: 0;
+	border-bottom-left-radius: 35px 30px;
+	border-bottom-right-radius: 35px 30px;
+}
+
+.mainHeader h2 {
+	color: #FFF2F2;
+	display: inline;
+	font-size: 15px;
+	vertical-align: middle;
+}
+
+.mainLogo {
+	height: 30px;
+	vertical-align: middle;
+}
+
+.main h1 {
+	text-align: center;
+	color: #FFF2F2;
+	padding-top: 0%;
+}
+
+.main h3 {
+	text-align: center;
+	color: #FFF2F2;
+}
+
+.listBtn {
+	font-size: 1.3em;
+
+}
+
+.listBtnClass {
+	border-radius: 0px 25px 25px 0px;
+	border: none;
+	width: 20%;
+	height: 2.5em;
+	font-size: 1em;
+	background-color: #08147E;
+	color: #FFF2F2;
+	text-align: center;
+}
+
+
+
+#textAdd {
+	font-size: 0.90em;
+	width: 20%;
+	height: 2.5em;
+	border-radius: 0px 25px 25px 0px;
+	background-color: #0A713F;
+	border: none;
+	color: #FFF2F2;
+}
+
+
+.myList {
+	border: 5px solid #707070;
+	border-radius: 20px;
+	width: 55%;
+	margin: auto;
+	padding: 2%;
+}
+
+/*List Style*/
+ul {
+	color: white;
+	font-size: 1em;
+}
+
+#items {
+	font-size: 1.3em;
+	display: inline;
+    margin-left: 2%;
+}
+
+#value{
+	color: #030C5B;
+	width: 1000%;
+}
+
+.listButton{
+    color: blue;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <title>To-Do List</title>
+</head>
+
+<body class="main">
+    <div class="mainHeader">
+        <div class="mainHeaderText">
+            <img src="../images/ToDoList.png" class="mainLogo" alt="Do-List Maker">
+            <h2>To-Do List Maker</h2>
+            <h1 id="greet"></h1>
+            <h3>Welcome To Do-List Maker</h3>
+        </div>
+    </div>
+    </div>
+
+    <div class="listBtn">
+        <input type="text" class="listBtnClass" placeholder="Type Item" id="input_text" />
+    </div>
+    <br>
+    <div class="addBtn">
+        <button onclick="listAdd()" id="textAdd">Add Item</button>
+    </div>
+
+    <div class="myList">
+        <h1>My List</h1>
+        <ul id="items">
+
+        </ul>
+    </div>
+
+
+</body>
+<script>
+    //Set Counter Value to 0;
+    var count = 0;
+    //Greet Date
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+        greet = 'Good Morning';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+
+    document.getElementById('greet').innerHTML = greet;
+
+    function listAdd() {
+        //Store List Items
+        var text = document.getElementById("input_text").value;
+        var textAdd = document.getElementById("items");
+
+        //Add list Items
+        count++;
+        var tag = document.createElement("li");
+
+        var remove = document.createElement("button");
+        
+        tag.innerHTML = text;
+        tag.id = "value" + count;
+        //remove.setAttribute("onclick", "removeAll(value" + count + ");");
+
+        textAdd.append(tag);
+
+        document.getElementById("input_text").value = "";
+    }
+
+    var els = document.getElementsByClassName('removeClass');
+
+    for (var i = 0; i < els.length; i++) {
+        els[i].addEventListener('click', function() {
+            this.parentNode.remove();
+        });
+    }
+
+</script>
+
+</html>
